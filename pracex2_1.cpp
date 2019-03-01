@@ -4,7 +4,16 @@ using namespace std;
 template <typename T>
 int countIf(T data[],int size,T key){
 	//Write your code here
-	
+	int sum=0,x;
+	for(int i=0;i<size;i++){
+		for(int j=0;j=key;j++){
+			sum=sum+1;
+			return sum;
+			
+		
+		}
+		
+	}
 
 }
 
