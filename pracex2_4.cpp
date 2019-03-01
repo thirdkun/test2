@@ -2,7 +2,7 @@
 #include <cmath>
 
 using namespace std;
-
+double sg(double x,double y);
 //Write prototype of  sg() here.
 
 int main(){
@@ -17,3 +17,15 @@ int main(){
 }
 
 //Write function definition of  sg() here.
+double sg(double x,double y){
+int N;    
+    if(x<=0||y<=0){
+        return 0;
+    }
+    else if(x/y<=10&&y/x<=10){
+        return sqrt(x*y);
+    }
+    else{
+        return sg(x,sqrt(x*y))+sg(y,sqrt(x*y));
+    }
+}
